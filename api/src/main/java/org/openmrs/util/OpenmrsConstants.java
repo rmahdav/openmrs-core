@@ -31,6 +31,7 @@ import org.openmrs.patient.impl.LuhnIdentifierValidator;
 import org.openmrs.scheduler.SchedulerConstants;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
+import org.openmrs.scheduler.EncDec;
 
 /**
  * Constants used in OpenMRS. Contents built from build properties (version, version_short, and
@@ -709,7 +710,7 @@ public final class OpenmrsConstants {
 		// TODO should be changed to text defaults and constants should be removed
 		props.add(new GlobalProperty("scheduler.username", SchedulerConstants.SCHEDULER_DEFAULT_USERNAME,
 		        "Username for the OpenMRS user that will perform the scheduler activities"));
-		props.add(new GlobalProperty("scheduler.password", SchedulerConstants.SCHEDULER_DEFAULT_PASSWORD,
+		props.add(new GlobalProperty("scheduler.password", EncDec.decrypt(SchedulerConstants.SCHEDULER_DEFAULT_PASSWORD),
 		        "Password for the OpenMRS user that will perform the scheduler activities"));
 		
 		props.add(new GlobalProperty(GLOBAL_PROPERTY_CONCEPTS_LOCKED, "false", "if true, do not allow editing concepts",
