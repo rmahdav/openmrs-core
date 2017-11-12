@@ -19,7 +19,7 @@ public class SchedulerConstants {
 	
 	public static String SCHEDULER_DEFAULT_USERNAME = "admin";
 	
-	public static String SCHEDULER_DEFAULT_PASSWORD = "test";
+	public static String SCHEDULER_DEFAULT_PASSWORD = "Edt5rfff4dsBHvnmol09nhwaq";
 	
 	/** The default 'from' address for emails send by the schedule */
 	public final static String SCHEDULER_DEFAULT_FROM = "scheduler@openmrs.org";
